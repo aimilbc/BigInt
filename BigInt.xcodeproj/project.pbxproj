@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0715C37D2379379C00BB9D09 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0715C37C2379379C00BB9D09 /* main.cpp */; };
+		0715C38523793ACD00BB9D09 /* BigInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0715C38423793ACD00BB9D09 /* BigInt.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		0715C3792379379C00BB9D09 /* BigInt */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BigInt; sourceTree = BUILT_PRODUCTS_DIR; };
 		0715C37C2379379C00BB9D09 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		0715C38323793ABD00BB9D09 /* BigInt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BigInt.h; sourceTree = "<group>"; };
+		0715C38423793ACD00BB9D09 /* BigInt.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BigInt.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				0715C37C2379379C00BB9D09 /* main.cpp */,
+				0715C38323793ABD00BB9D09 /* BigInt.h */,
+				0715C38423793ACD00BB9D09 /* BigInt.cpp */,
 			);
 			path = BigInt;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0715C38523793ACD00BB9D09 /* BigInt.cpp in Sources */,
 				0715C37D2379379C00BB9D09 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +246,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -248,6 +255,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

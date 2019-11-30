@@ -8,8 +8,25 @@
 
 #ifndef BIGINT_H
 #define BIGINT_H
+#include <iostream>
+#include <vector>
+
+using namespace std;
 
 class BigInt{
+    vector<char> storage;
+    //vector<char>::iterator it;
+public:
+    BigInt();
+    ~BigInt();
+    BigInt(int);
+    BigInt(string);
+    void constructor();
+    BigInt operator+(BigInt&);
+    BigInt operator-(BigInt&);
+    friend ostream & operator << (ostream &a, const BigInt &b);
+    void print();
+    double toDouble();
     
 };
 

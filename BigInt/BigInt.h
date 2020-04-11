@@ -15,15 +15,17 @@ using namespace std;
 
 class BigInt{
     vector<char> storage;
-    //vector<char>::iterator it;
 public:
     BigInt();
     ~BigInt();
     BigInt(int);
     BigInt(string);
-    void constructor();
+   // BigInt(const BigInt &);
+    BigInt operator=(BigInt&);
     BigInt operator+(BigInt&);
     BigInt operator-(BigInt&);
+    BigInt operator++(int);
+    friend bool operator <= (const BigInt &a,const int &i);
     friend ostream & operator << (ostream &a, const BigInt &b);
     void print();
     double toDouble();
